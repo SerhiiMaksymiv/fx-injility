@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "s.mcsymiv@gmail.com",
+      "strict_min_version": "136.0"
+    }
+  },
+  "author": "mcsymiv",
+  "name": "injility",
+  "version": "1.0.0",
+  "description": "API for BG",
+  "homepage_url": "https://github.com/SerhiiMaksymiv/injility",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "unlimitedStorage",
+    "sessions",
+    "<all_urls>",
+    "scripting"
+  ],
+  "sidebar_action": {
+    "default_title": "Sidebery",
+    "default_panel": "./index.html"
+  },
+  "commands": {
+    "_execute_sidebar_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U",
+        "mac": "Ctrl+Shift+U"
+      }
+    }
+  },
+  "content_security_policy": "script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'self'"
+}
